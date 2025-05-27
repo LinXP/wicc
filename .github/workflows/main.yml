@@ -39,9 +39,9 @@ jobs:
       working-directory: ${{env.GITHUB_WORKSPACE}}
       run: msbuild /v:m /m /p:Configuration=${{matrix.buildConfiguration}} /p:Platform="x64" ${{env.SOLUTION_FILE_PATH}}
 
-    - name: Build ARM64
-      working-directory: ${{env.GITHUB_WORKSPACE}}
-      run: msbuild /v:m /m /p:Configuration=${{matrix.buildConfiguration}} /p:Platform="ARM64" ${{env.SOLUTION_FILE_PATH}}
+#    - name: Build ARM64
+#      working-directory: ${{env.GITHUB_WORKSPACE}}
+#      run: msbuild /v:m /m /p:Configuration=${{matrix.buildConfiguration}} /p:Platform="ARM64" ${{env.SOLUTION_FILE_PATH}}
     
 #    - run: mkdir -p path/to/artifact
 #    - run: echo hello > path/to/artifact/world.txt
